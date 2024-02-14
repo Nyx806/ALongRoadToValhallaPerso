@@ -11,6 +11,7 @@ C'est un site vitrine permetant ded mettre en avant le trailer et l'univers du j
 * Symfony CLI
 * Docker
 * docker-compose
+* nodejs et npm
 
 Vous pouvez vérifier les pré-requis ( sauf docker et docker-compose) avec la commande suivante (de la CLI Symfony) : 
 
@@ -21,6 +22,9 @@ symfony check:requirements
 ### lancer l'environnement de développement 
 
 ```bash
+composer install
+npm install
+npm run build
 docker-compose up -d
 symfony serve -d
 ```
